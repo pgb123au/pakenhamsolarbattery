@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Solar &amp; Battery Quote | Pakenham, Cardinia | (03) 9003 0108"
+  description="Get a free, no-obligation solar &amp; battery quote for your Pakenham, Officer, Cardinia Lakes, Heritage Springs or Cardinia Shire home. Bills checked, rebates confirmed, system sized honestly."
+  canonical="https://pakenhamsolarbattery.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Quote</span>
+      <h1>Get your free solar &amp; battery quote.</h1>
+      <p class="hero-sub">
+        Tell us about your home and your bills. We&rsquo;ll check your roof and meter,
+        confirm exactly which 2026 rebates apply to your address, and size a system
+        honestly &mdash; solar, battery, EV charger or all three. Free, no obligation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Pakenham 3810, Officer 3809, Beaconsfield 3807" />
+
+            <label for="format">What are you after?</label>
+            <select id="format" name="format">
+              <option value="not-sure">Not sure — want a recommendation</option>
+              <option value="solar-panels">Solar panel installation</option>
+              <option value="battery-storage">Battery storage (Powerwall, Sungrow, BYD)</option>
+              <option value="solar-plus-battery">Solar + battery system (combined)</option>
+              <option value="battery-retrofit">Add a battery to my existing solar</option>
+              <option value="ev-charger">EV charger installation</option>
+              <option value="solar-ev-battery">Solar + battery + EV charger</option>
+              <option value="repairs-servicing">Solar repairs / servicing</option>
+            </select>
+
+            <label for="purpose">What is your main goal?</label>
+            <select id="purpose" name="purpose">
+              <option value="bill-relief">Cut my power bill</option>
+              <option value="self-consumption">Use more of my own solar</option>
+              <option value="blackout-backup">Blackout / outage backup</option>
+              <option value="ev-charging">Charge an EV on solar</option>
+              <option value="new-build">New build — solar from day one</option>
+              <option value="fix-system">Fix an underperforming system</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="bill">Typical quarterly power bill</label>
+            <select id="bill" name="bill">
+              <option value="not-sure">Not sure</option>
+              <option value="under-300">Under $300</option>
+              <option value="300-500">$300–$500</option>
+              <option value="500-800">$500–$800</option>
+              <option value="800-plus">$800+</option>
+            </select>
+
+            <label for="existing-solar">Do you already have solar?</label>
+            <select id="existing-solar" name="existing-solar">
+              <option value="no">No — first system</option>
+              <option value="yes-no-battery">Yes — solar but no battery</option>
+              <option value="yes-with-battery">Yes — solar and a battery</option>
+              <option value="not-sure">Not sure of the details</option>
+            </select>
+
+            <label for="timeframe">When do you want it done?</label>
+            <select id="timeframe" name="timeframe">
+              <option value="asap">ASAP - next 2 months</option>
+              <option value="3-6-months">3-6 months</option>
+              <option value="before-rebate-tapers">Before the 2026 battery rebate tapers</option>
+              <option value="12+">12 months or longer (research stage)</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="Roof type (tile / Colorbond), single or double storey, EV now or planned, budget range, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon–Sat 7am–6pm</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full Cardinia Shire — Pakenham, Officer, Cardinia Lakes, Lakeside, Heritage Springs, Beaconsfield + the wider Cardinia growth corridor.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free, no-obligation system quote</li>
+                <li>Bills &amp; roof reviewed, system sized to you</li>
+                <li>Every 2026 rebate confirmed for your address</li>
+                <li>Fixed-price written proposal</li>
+                <li>CEC-accredited install, United Energy approved</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

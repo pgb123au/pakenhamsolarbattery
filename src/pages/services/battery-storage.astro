@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a home battery cost in Pakenham in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Home batteries are roughly $1,000-$1,300 per usable kWh before rebates. A 13.5kWh Tesla Powerwall 3 lands near $13,500-$16,500 installed; a 10kWh Sungrow or BYD pack near $9,000-$12,000. The 2026 federal Cheaper Home Batteries Program takes around $252 per usable kWh off - about $2,500 off a 10kWh battery and over $3,000 off a Powerwall - so the net cost is meaningfully lower than the sticker. Worked example: a Lakeside family adds a 10kWh battery to their existing solar at a list price near $11,000; the rebate takes roughly $2,500 off, netting about $8,500." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 2026 battery rebate in Victoria?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The federal Cheaper Home Batteries Program is a 30 percent discount on installed battery cost, worth around $252 per usable kWh in 2026 and tapering in later years. It is claimed by your CEC-accredited installer as an upfront discount, so you pay the net price. It applies on top of solar STCs and any Solar Victoria eligibility. This is the biggest battery incentive Australia has run, which is exactly why 2026 is the year to retrofit a battery onto an existing Pakenham solar system." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will a battery give me backup power in a Cardinia blackout?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, if it is configured for backup. A Tesla Powerwall 3 and most Sungrow and BYD hybrid systems can island your home and keep essential circuits running through a grid outage - useful on the corridor's edges where storms occasionally drop power. We wire a backup circuit (fridge, lights, internet, a power point or two) so the essentials stay on. Whole-home backup is possible but depends on your load and battery size; we spec it at the quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which batteries do you install in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tesla Powerwall 3, Sungrow and BYD - the three most reliable, well-supported batteries in the Australian market. We match the battery to your inverter and your real evening usage rather than overselling capacity. Every install is to AS/NZS 5139 (battery safety), AS/NZS 5033 and AS/NZS 4777, by a Clean Energy Council accredited installer, with United Energy notified." }
+    }
+  ]
+};
+---
+<Layout
+  title="Battery Storage Pakenham | Tesla Powerwall, Sungrow, BYD | (03) 9003 0108"
+  description="Home battery storage for Pakenham, Officer, Cardinia Lakes &amp; Cardinia Shire. Tesla Powerwall 3, Sungrow &amp; BYD install with the 2026 federal Cheaper Home Batteries rebate applied. Store daytime solar, blackout backup. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/services/battery-storage/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Store your daytime solar</span>
+      <h1>Battery storage in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        Tesla Powerwall 3, Sungrow and BYD batteries that store the cheap daytime solar
+        you currently export and use it through the expensive evening peak &mdash; plus
+        blackout backup. The 2026 federal Cheaper Home Batteries rebate applied upfront.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free battery quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Why 2026 is the year to add a battery in Cardinia.</h2>
+      <div style="max-width: 65rem;">
+        <h3>The rebate is at its highest right now.</h3>
+        <p>
+          The federal <strong>Cheaper Home Batteries Program</strong> is the biggest
+          battery incentive Australia has run &mdash; a 30 percent discount worth
+          around <strong>$252 per usable kWh in 2026</strong>, tapering in later years.
+          It stacks on top of solar STCs and Solar Victoria eligibility, and we claim
+          it as an upfront discount so you pay the net price. The corridor has a huge
+          existing solar base from a decade of estate roofs, and this rebate is exactly
+          what&rsquo;s driving the battery-retrofit surge across Cardinia Lakes,
+          Lakeside, Officer and Beaconsfield right now.
+        </p>
+
+        <h3 style="margin-top: 2rem;">From 30% self-use to 70&ndash;80%.</h3>
+        <p>
+          Without a battery, a typical Pakenham home uses only about 30 percent of its
+          own solar and exports the rest for a few cents. A battery flips that &mdash;
+          you store the daytime surplus and run the house on it through the evening
+          peak, lifting self-consumption to <strong>70&ndash;80 percent</strong>.
+          That&rsquo;s where the real bill saving lives, especially with rising
+          time-of-use tariffs across United Energy&rsquo;s network.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The batteries we install.</h3>
+        <ul>
+          <li><strong>Tesla Powerwall 3</strong> &mdash; 13.5kWh, built-in solar inverter, strong whole-home backup, the premium choice (~$13,500&ndash;$16,500 installed)</li>
+          <li><strong>Sungrow</strong> &mdash; modular, excellent value, pairs natively with Sungrow hybrid inverters (~$9,000&ndash;$12,000 for 10kWh)</li>
+          <li><strong>BYD</strong> &mdash; reliable LFP chemistry, scalable stacks for larger Heritage Springs and Beaconsfield homes</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">A worked Pakenham example.</h3>
+        <p>
+          A Lakeside family with an existing 6.6kW array adds a 10kWh battery. List
+          price is near <strong>$11,000</strong>; the 2026 rebate takes roughly
+          <strong>$2,500</strong> off, netting about <strong>$8,500</strong>. Storing
+          their daytime solar instead of exporting it saves around $1,000&ndash;$1,400 a
+          year off the evening peak &mdash; plus they keep the fridge, lights and
+          internet on through a storm outage.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Compliance &amp; backup, done right.</h3>
+        <ul>
+          <li>CEC-accredited install to AS/NZS 5139 (battery safety), AS/NZS 5033 and AS/NZS 4777</li>
+          <li>AS/NZS 3000 (Wiring Rules) and a Certificate of Electrical Safety</li>
+          <li>Backup circuit wired for essentials (fridge, lights, internet, power points)</li>
+          <li>United Energy (DNSP) notification and app monitoring set up</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Battery on its own, or part of a system.</h2>
+      <p class="lead" style="max-width: 48rem;">
+        Retrofitting onto an existing array? Check
+        <a href="/services/solar-panel-installation/">solar panel installation</a> if
+        your inverter isn&rsquo;t battery-ready. Doing both at once is cheapest as a
+        combined <a href="/services/solar-battery-systems/">solar + battery system</a>,
+        and many Cardinia families add an
+        <a href="/services/ev-charger-installation/">EV charger</a> at the same time.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free battery storage quote.</h2>
+        <p>We size to your evening usage, confirm your rebate, and spec backup honestly.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

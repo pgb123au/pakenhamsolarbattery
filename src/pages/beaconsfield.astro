@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What solar and battery setup suits a premium Beaconsfield home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Beaconsfield homes are premium and larger, so high-end setups are the norm - a 10-13kW Tier-1 array with a Tesla Powerwall 3 (or multiple Powerwalls / stacked batteries) and an EV charger, often more than one. We design for whole-home backup and bigger evening loads. After the 2026 battery rebate and STCs a full premium system is sized to the home rather than a package." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get whole-home backup and multiple batteries in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Larger Beaconsfield and acreage homes often want whole-home or near-whole-home backup, which means multiple Tesla Powerwalls or stacked Sungrow/BYD modules sized to carry the full evening and outage load. The 2026 Cheaper Home Batteries rebate (around $252 per usable kWh) scales with capacity, so a larger battery bank captures a larger rebate. We design the backup circuits to match how you actually use the house." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install EV chargers for multiple cars in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Premium Beaconsfield homes frequently run two EVs, so we install multiple chargers (Tesla Wall Connector, Zappi, Wallbox) with load management so they share the available supply and prioritise your own solar. On larger and acreage blocks we also handle three-phase supply and longer cable runs." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install solar in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pakenham Solar & Battery installs and services premium solar, batteries and EV chargers across Beaconsfield, including larger and acreage properties on the Cardinia-Casey boundary. We are Clean Energy Council accredited and install to AS/NZS 5033, AS/NZS 4777 and AS/NZS 3000. Call (03) 9003 0108 for a free quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar &amp; Battery Beaconsfield | Powerwall, Multi-Battery, EV | (03) 9003 0108"
+  description="Premium solar panels, Tesla Powerwall &amp; battery storage and EV chargers for Beaconsfield - larger &amp; acreage homes, whole-home backup, multi-EV setups. CEC-accredited. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/beaconsfield/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Beaconsfield &middot; Premium &amp; Acreage</span>
+      <h1>Solar &amp; battery in <span class="accent">Beaconsfield</span>.</h1>
+      <p class="hero-sub">
+        Beaconsfield is premium territory on the Cardinia&ndash;Casey boundary &mdash;
+        larger and acreage homes wanting high-end setups. Tesla Powerwall, multi-battery
+        banks with whole-home backup, and multi-EV charging are the Beaconsfield norm.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Beaconsfield</span>
+      <h2>The Beaconsfield solar story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Premium homes, high-end setups.</h3>
+        <p>
+          Beaconsfield blends an established township with acreage blocks toward the
+          hills, and both lean premium. A high-end
+          <a href="/services/solar-battery-systems/">solar + battery system</a> here is
+          typically a 10&ndash;13kW Tier-1 array with a
+          <a href="/services/battery-storage/">Tesla Powerwall 3</a> &mdash; or multiple
+          Powerwalls and stacked modules &mdash; sized for whole-home backup and bigger
+          evening loads. We design to the home, not a package.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Whole-home backup &amp; multi-EV.</h3>
+        <p>
+          Larger and acreage Beaconsfield homes often want whole-home or near-whole-home
+          backup, which means multi-battery banks sized to carry the full evening and any
+          outage. The 2026 Cheaper Home Batteries rebate (around $252 per usable kWh)
+          scales with capacity, so a bigger bank captures a bigger rebate. Many premium
+          homes run two EVs, so we install multiple
+          <a href="/services/ev-charger-installation/">EV chargers</a> with load
+          management, and handle three-phase supply and longer cable runs on acreage
+          blocks.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Beaconsfield jobs.</h3>
+        <ul>
+          <li>13kW premium <a href="/services/solar-panel-installation/">Tier-1 solar array</a> (~$11,000&ndash;$14,000 after STCs)</li>
+          <li>Tesla Powerwall 3 or multi-battery bank with whole-home backup</li>
+          <li>Three-phase solar + battery on an acreage block</li>
+          <li>Dual <a href="/services/ev-charger-installation/">EV chargers</a> with load management</li>
+          <li><a href="/services/solar-repairs-servicing/">Service or upgrade</a> of an existing premium system</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Beaconsfield solar quote.</h2>
+        <p>Premium Powerwall + multi-battery setups. Whole-home backup. Multi-EV ready.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does an EV charger install cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A home EV charger supplied and installed in Pakenham typically runs $1,400-$2,500. The charger itself (Tesla Wall Connector, Zappi, Wallbox) is roughly $800-$1,500, and installation is $600-$1,200 depending on cable run from the switchboard, whether a new circuit or switchboard upgrade is needed, and solar integration. Worked example: an Officer home installs a 7kW Zappi mounted near the garage on a short cable run with solar diversion enabled - charger about $1,200, install about $700, total near $1,900." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I charge my EV from my solar in Cardinia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - this is the whole point of integrating the charger with your system. Solar-aware chargers like the Zappi and Tesla Wall Connector can divert surplus solar straight into the car, so you charge on free daytime sun rather than peak-rate grid power. With a battery in the mix you can even charge from stored solar in the evening. We set the charge modes up so daytime charging prioritises your own solar." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a switchboard upgrade for an EV charger?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sometimes. Many early-2000s Cardinia Lakes and Lakeside homes have switchboards near capacity, and a 7kW charger is a significant load. We check your switchboard, main supply and existing circuits first. Where capacity is tight we use load management (the charger automatically backs off when the house draws heavily) which often avoids a costly upgrade. If an upgrade is genuinely needed we quote it before any work." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which EV chargers do you install in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tesla Wall Connector, Zappi (the best solar-diversion charger) and Wallbox - the well-supported brands with strong app control and load management. Every install is to AS/NZS 3000 (Wiring Rules) with United Energy compliance and a Certificate of Electrical Safety. We integrate the charger with your existing or new solar and battery so it draws from sunshine first." }
+    }
+  ]
+};
+---
+<Layout
+  title="EV Charger Installation Pakenham | Tesla, Zappi, Wallbox | (03) 9003 0108"
+  description="Home EV charger installation for Pakenham, Officer, Cardinia Lakes &amp; Cardinia Shire. Tesla Wall Connector, Zappi &amp; Wallbox integrated with your solar so you charge on free daytime sun. To AS/NZS 3000, United Energy compliant. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/services/ev-charger-installation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Charge on free daytime sun</span>
+      <h1>EV charger installation in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        Tesla Wall Connector, Zappi and Wallbox home chargers integrated with your solar
+        so the car charges on free daytime sun, not peak-rate grid power. Installed to
+        AS/NZS 3000 with United Energy compliance and load management.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free EV charger quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Drive on sunshine, not the evening peak.</h2>
+      <div style="max-width: 65rem;">
+        <h3>Solar-integrated charging is the whole point.</h3>
+        <p>
+          EV uptake across the Cardinia growth corridor is climbing fast, and most new
+          owners plug into a standard power point at peak grid rates &mdash; the most
+          expensive way to charge. A solar-aware charger like the <strong>Zappi</strong>
+          or <strong>Tesla Wall Connector</strong> diverts your surplus daytime solar
+          straight into the car instead. With a <a href="/services/battery-storage/">battery</a>
+          in the mix, you can even top up from stored solar overnight. We set the charge
+          modes so your own solar is always used first.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The chargers we install.</h3>
+        <ul>
+          <li><strong>Zappi</strong> &mdash; the best solar-diversion charger, three charge modes, ideal for solar homes</li>
+          <li><strong>Tesla Wall Connector</strong> &mdash; fast, sleek, app-controlled, perfect for Tesla owners</li>
+          <li><strong>Wallbox</strong> &mdash; compact, smart, strong load management for tight switchboards</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Switchboard &amp; load management.</h3>
+        <p>
+          A 7kW charger is a serious load, and many early-2000s Cardinia Lakes and
+          Lakeside homes have switchboards near capacity. We check your switchboard,
+          main supply and circuits first. Where capacity is tight, <strong>load
+          management</strong> lets the charger automatically back off when the house
+          draws heavily &mdash; often avoiding a costly switchboard upgrade. If an
+          upgrade is genuinely needed, we quote it before any work.
+        </p>
+
+        <h3 style="margin-top: 2rem;">A worked Pakenham example.</h3>
+        <p>
+          An Officer home installs a 7kW Zappi near the garage on a short cable run from
+          the switchboard, with solar diversion enabled. The charger is about
+          <strong>$1,200</strong> and the install about <strong>$700</strong> &mdash;
+          near <strong>$1,900</strong> all up. Charging on surplus solar instead of the
+          evening peak typically saves $700&ndash;$1,200 a year against grid charging.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Compliance we handle.</h3>
+        <ul>
+          <li>Install to AS/NZS 3000 (Wiring Rules) with a Certificate of Electrical Safety</li>
+          <li>United Energy network compliance and notification where required</li>
+          <li>Integration with your existing or new solar and battery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Get the most from your charger.</h2>
+      <p class="lead" style="max-width: 48rem;">
+        No solar yet? Pair the charger with
+        <a href="/services/solar-panel-installation/">solar panel installation</a> so
+        you charge for free. Want to charge from stored sun after dark? Add
+        <a href="/services/battery-storage/">battery storage</a>, or do the lot at once
+        as a <a href="/services/solar-battery-systems/">solar + battery system</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free EV charger quote.</h2>
+        <p>We check your switchboard, integrate it with your solar, and quote honestly.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

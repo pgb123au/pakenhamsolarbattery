@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much is a solar and battery system in Pakenham in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A combined system varies with solar size and battery capacity. Worked example: a Cardinia Lakes family installs a 10kW solar array plus a 10kWh battery. List price is about $24,000; the federal Cheaper Home Batteries Program (around $252/kWh in 2026) takes roughly $2,500 off the battery, STCs take several thousand off the solar, and the net is typically $17,000-$19,000. On a $400-plus quarterly bill that pays back in around 6-8 years - faster than solar-then-battery bought separately, because you only pay for one install and one set of switchgear." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it cheaper to buy solar and battery together?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Usually yes. Doing both at once means one hybrid inverter (rather than a string inverter you replace later), one install visit, one set of switchgear and one United Energy application. You also lock in the 2026 Cheaper Home Batteries rebate at its highest while it tapers in later years. We design the solar size and battery capacity together so the array fills the battery by mid-afternoon and the battery carries the evening - no wasted export, no flat battery at 8pm." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which rebates apply to a solar plus battery system in Cardinia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three stack. Solar STCs apply to the panels as an upfront discount. The federal Cheaper Home Batteries Program (around $252 per usable kWh in 2026) applies to the battery. Solar Victoria rebate and interest-free loan eligibility may also apply depending on your income and property. As a CEC-accredited installer we claim STCs and the battery rebate on your behalf and confirm Solar Victoria eligibility for your address before you commit." }
+    },
+    {
+      "@type": "Question",
+      "name": "What inverter do I need for a solar and battery system?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A hybrid inverter, which manages both the solar array and the battery in one unit. We typically use Sungrow or Fronius hybrids, or a Tesla Powerwall 3 which has its own integrated inverter. Designing the system around a hybrid inverter from the start avoids paying for a string inverter now and replacing it when you add a battery. Everything is installed to AS/NZS 4777 and AS/NZS 5033 by a Clean Energy Council accredited installer." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar + Battery Systems Pakenham | Combined, Rebate-Maxed | (03) 9003 0108"
+  description="Combined solar + battery systems for Pakenham, Officer, Cardinia Lakes &amp; Cardinia Shire. One hybrid design that maximises self-consumption and stacks the Cheaper Home Batteries rebate, Solar Victoria &amp; STCs. ~$17,000-$19,000 net. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/services/solar-battery-systems/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Solar &amp; battery, designed together</span>
+      <h1>Solar + battery systems in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        One combined design that fills the battery by mid-afternoon and carries the
+        evening peak &mdash; maximising self-consumption and stacking the Cheaper Home
+        Batteries rebate with Solar Victoria and federal STCs. The best-value way to
+        cut a $400-plus quarterly bill.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free system quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Why a combined system beats buying separately.</h2>
+      <div style="max-width: 65rem;">
+        <h3>One hybrid inverter, one install, one application.</h3>
+        <p>
+          Buying solar now and a battery in three years means paying for a string
+          inverter you later rip out, a second install visit, a second set of
+          switchgear and a second United Energy application. A combined
+          <strong>solar + battery system</strong> uses a single hybrid inverter from
+          day one, so adding battery capacity later is a clip-in upgrade. It also locks
+          in the 2026 Cheaper Home Batteries rebate at its highest while it tapers in
+          later years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Sized so the array fills the battery.</h3>
+        <p>
+          The art is balance. Too small an array and the battery never fully charges on
+          a cloudy Cardinia winter day; too small a battery and you&rsquo;re back to
+          exporting cheap surplus. We size the panels and the battery together against
+          your real load curve &mdash; the corridor&rsquo;s large north-facing estate
+          roofs in Cardinia Lakes, Officer and Heritage Springs make a generous
+          10&ndash;13kW array easy, which comfortably fills a 10&ndash;13.5kWh battery
+          to carry the evening.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Every rebate, stacked.</h3>
+        <ul>
+          <li><strong>Solar STCs</strong> &mdash; applied to the panels as an upfront discount</li>
+          <li><strong>Cheaper Home Batteries Program</strong> &mdash; around $252 per usable kWh in 2026 on the battery</li>
+          <li><strong>Solar Victoria</strong> &mdash; rebate and interest-free loan eligibility checked for your address</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">A worked Pakenham example.</h3>
+        <p>
+          A Cardinia Lakes family installs a 10kW array plus a 10kWh battery. List
+          price is about <strong>$24,000</strong>; the battery rebate takes roughly
+          <strong>$2,500</strong> off and STCs take several thousand off the solar, so
+          the net lands around <strong>$17,000&ndash;$19,000</strong>. On their
+          $420 quarterly bill the system pays back in roughly 6&ndash;8 years &mdash;
+          and they get blackout backup on top.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Compliance we handle.</h3>
+        <ul>
+          <li>CEC-accredited install to AS/NZS 5033, AS/NZS 4777 and AS/NZS 5139</li>
+          <li>AS/NZS 3000 (Wiring Rules) and a Certificate of Electrical Safety</li>
+          <li>United Energy (DNSP) pre-approval, export design and connection paperwork</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Build it your way.</h2>
+      <p class="lead" style="max-width: 48rem;">
+        Want just the panels first? See
+        <a href="/services/solar-panel-installation/">solar panel installation</a>.
+        Already have solar and only need storage? See
+        <a href="/services/battery-storage/">battery storage</a>. Driving electric? Add
+        an <a href="/services/ev-charger-installation/">EV charger</a> wired into the
+        same system so you charge on free daytime sun.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free solar + battery system quote.</h2>
+        <p>We size panels and battery together, stack every rebate, and show you the net.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

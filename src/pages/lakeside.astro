@@ -1,0 +1,120 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is solar and battery worth it for a Lakeside family home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Lakeside is full of family homes chasing bill relief, and a solar-plus-battery combo is the strongest play here. A combined 10kW solar and 10kWh battery system nets around $17,000-$19,000 after the 2026 Cheaper Home Batteries rebate and STCs, and pays back in roughly 6-8 years on a $400-plus quarterly bill. Adding an EV charger to the same system lets you run the car on free daytime sun too." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get solar, battery and an EV charger together in Lakeside?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - the solar + battery + EV-charger combo is exactly what Lakeside families ask for. Doing it as one design with a hybrid inverter is cheapest: one install, one set of switchgear, one United Energy application, and the EV charger set to draw from your own solar first. We size the array to fill the battery and cover the car's charging on daytime sun." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a home battery cost in Lakeside in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Before rebates, batteries run roughly $1,000-$1,300 per usable kWh. The 2026 federal Cheaper Home Batteries Program takes around $252 per usable kWh off - about $2,500 off a 10kWh pack. So a 10kWh Sungrow or BYD battery nets near $8,500, and a 13.5kWh Tesla Powerwall 3 nets around $11,000-$13,500 depending on backup configuration." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install solar in Lakeside?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pakenham Solar & Battery installs and services solar panels, batteries and EV chargers throughout Lakeside. We are Clean Energy Council accredited and install to AS/NZS 5033, AS/NZS 4777 and AS/NZS 3000, with United Energy pre-approval handled. Call (03) 9003 0108 for a free quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar &amp; Battery Lakeside | Solar, Battery, EV Charger | (03) 9003 0108"
+  description="Solar panels, battery storage &amp; EV chargers for Lakeside families chasing bill relief - solar + battery + EV combos, CEC-accredited, 2026 rebate applied. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/lakeside/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Lakeside &middot; Family Estate</span>
+      <h1>Solar &amp; battery in <span class="accent">Lakeside</span>.</h1>
+      <p class="hero-sub">
+        Lakeside is family-home territory where the search is simple &mdash; bill relief.
+        Solar, battery and EV-charger combinations are the staple here, designed together
+        so the array fills the battery and the car charges on free daytime sun.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Lakeside</span>
+      <h2>The Lakeside solar story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Families chasing bill relief.</h3>
+        <p>
+          Lakeside households feel the cost-of-living pinch, and a
+          <a href="/services/solar-battery-systems/">combined solar + battery system</a>
+          is the strongest answer. One hybrid design nets around $17,000&ndash;$19,000
+          after the 2026 Cheaper Home Batteries rebate and STCs, and pays back in roughly
+          6&ndash;8 years on a $400-plus quarterly bill. Designing solar and battery
+          together means the array fills the battery by mid-afternoon and the battery
+          carries the expensive evening peak &mdash; no wasted export, no flat battery
+          at 8pm.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Solar + battery + EV is the Lakeside combo.</h3>
+        <p>
+          More Lakeside families are adding an
+          <a href="/services/ev-charger-installation/">EV charger</a> to the same
+          system, set to draw from their own solar first. Charging the car on daytime
+          sun instead of the grid peak saves $700&ndash;$1,200 a year on its own. We
+          size the <a href="/services/solar-panel-installation/">solar array</a> with the
+          car&rsquo;s charging in mind so it all runs off sunshine.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Lakeside jobs.</h3>
+        <ul>
+          <li>Combined 10kW solar + 10kWh battery system ($17,000&ndash;$19,000 net)</li>
+          <li>Solar + battery + EV charger as one integrated design</li>
+          <li><a href="/services/battery-storage/">Battery retrofit</a> onto existing family-home solar (~$8,500 net for 10kWh)</li>
+          <li>6.6&ndash;10kW solar for first-time installs, STCs applied upfront</li>
+          <li><a href="/services/solar-repairs-servicing/">Service or repair</a> of an underperforming system</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Lakeside solar quote.</h2>
+        <p>Solar + battery + EV designed together. Maximum bill relief, every rebate applied.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I add solar to a new Officer build?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, and from day one. Officer's new estates - Arena, Timbertop, Officer Fields - have solar-ready roofs that are large and north-facing, so a 6.6-10kW system is easy and pays back in around 4-5 years. Many volume builders fit only a token panel set or none at all, so a proper CEC-accredited system sized to your usage is well worth it. Officer buyers are also keen on batteries and EV chargers from the start." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it better to install solar with a battery on a new Officer home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often yes. On a new build it is cheapest to install solar and battery together with a hybrid inverter - one install, one application, and you lock in the 2026 Cheaper Home Batteries rebate while it is highest. A combined 10kW solar plus 10kWh battery nets around $17,000-$19,000 after rebates and STCs. If budget is tight, install a hybrid-ready solar system now and bolt the battery on later without replacing the inverter." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get an EV charger installed in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. New Officer estate homes are a natural fit for an EV charger integrated with solar - a 7kW Zappi or Tesla Wall Connector set to charge on surplus daytime sun. A typical install is around $1,900 all up. We check the switchboard and use load management where needed so you usually avoid an upgrade." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install solar in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pakenham Solar & Battery installs solar, batteries and EV chargers across Officer's Arena, Timbertop and Officer Fields estates. We are Clean Energy Council accredited and install to AS/NZS 5033, AS/NZS 4777 and AS/NZS 3000, with United Energy pre-approval handled. Call (03) 9003 0108 for a free quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar &amp; Battery Officer | New Estates, Solar-Ready Roofs | (03) 9003 0108"
+  description="Solar panels, battery storage &amp; EV chargers for Officer - Arena, Timbertop, Officer Fields new-build estates with solar-ready roofs. Battery + EV from day one. CEC-accredited. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/officer/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Officer &middot; Arena &middot; Timbertop &middot; Officer Fields</span>
+      <h1>Solar &amp; battery in <span class="accent">Officer</span>.</h1>
+      <p class="hero-sub">
+        Officer is Cardinia&rsquo;s fastest-growing new-build corridor &mdash; Arena,
+        Timbertop and Officer Fields estates with large, north-facing, solar-ready roofs.
+        Solar, battery and EV-charger interest from day one is the Officer norm.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Officer</span>
+      <h2>The Officer solar story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Solar-ready new-build roofs.</h3>
+        <p>
+          Officer&rsquo;s Arena, Timbertop and Officer Fields estates are new homes with
+          large, north-facing roofs &mdash; ideal for solar from the start. Volume
+          builders often fit only a token panel set, so a proper CEC-accredited
+          <a href="/services/solar-panel-installation/">6.6&ndash;10kW system</a> sized
+          to your usage is well worth it. After STCs that&rsquo;s about
+          $5,500&ndash;$11,000, paying back in around 4&ndash;5 years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Battery and EV from day one.</h3>
+        <p>
+          Officer buyers are among the keenest on
+          <a href="/services/battery-storage/">batteries</a> and
+          <a href="/services/ev-charger-installation/">EV chargers</a> in the corridor.
+          On a new build it&rsquo;s cheapest to install solar and battery together as one
+          <a href="/services/solar-battery-systems/">hybrid system</a> &mdash; one
+          install, one United Energy application, and the 2026 Cheaper Home Batteries
+          rebate locked in while it&rsquo;s highest. If budget is tight, a hybrid-ready
+          solar system now lets you bolt the battery on later without swapping the
+          inverter.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Officer jobs.</h3>
+        <ul>
+          <li>6.6&ndash;10kW solar on a new estate roof, STCs applied (~$5,500&ndash;$11,000)</li>
+          <li>Combined solar + 10kWh battery, rebate applied ($17,000&ndash;$19,000 net)</li>
+          <li>Hybrid-ready solar now, battery added later</li>
+          <li>7kW EV charger integrated with solar (~$1,900 all up)</li>
+          <li>Builder-handover solar upgrade to a real, properly sized system</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Officer solar quote.</h2>
+        <p>New-build solar specialists. Battery + EV from day one. Every rebate applied.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

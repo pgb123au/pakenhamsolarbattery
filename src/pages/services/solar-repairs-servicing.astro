@@ -1,0 +1,140 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why has my Pakenham solar system stopped producing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The most common cause is an inverter fault - a red light, an error code, or nothing on the display. Other culprits are a tripped DC isolator (the rooftop and meter-box isolators were a known failure point on older installs), a blown fuse, a grid voltage issue, or panels that are soiled or shaded. We diagnose with panel and string testing, isolator and meter checks, and an inverter read-out, then quote the fix before any work. Many systems are back online same visit." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you service solar systems you did not install?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We service and repair any brand of solar or battery across Pakenham, Officer and the Cardinia Shire, regardless of who installed it - including systems whose original installer has gone out of business, which is common with the corridor's decade-old estate installs. We test panels and strings, inverters, isolators and meters, and bring the system back to spec to AS/NZS 5033 and AS/NZS 4777." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I service my solar in Cardinia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A health check every 2-3 years is sensible for a grid-tied system, plus a panel clean if output has dropped. Many early-2000s Cardinia Lakes and Lakeside systems are now 10-15 years old and benefit from an inverter check and isolator inspection - the failure-prone components. If you are seeing lower output, more grid import, or inverter warnings, book a service sooner. We also do pre-sale system checks so your solar is a selling point." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a solar repair cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A diagnostic call-out and health check is typically $150-$250, credited toward the repair if you proceed. Common repairs: isolator or fuse replacement $200-$450; a full inverter replacement $1,500-$3,000 depending on size and brand; a panel clean and string test from around $200. We always diagnose and quote before any chargeable repair work, and we will tell you honestly when an ageing inverter is better replaced than repaired." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar Repairs &amp; Servicing Pakenham | Any Brand, Inverter Faults | (03) 9003 0108"
+  description="Solar repairs &amp; servicing for Pakenham, Officer, Cardinia Lakes &amp; Cardinia Shire. Inverter faults, underperforming systems, isolator &amp; meter issues, panel &amp; string testing and clean. Any brand, even if your installer is gone. Free diagnosis booking."
+  canonical="https://pakenhamsolarbattery.com.au/services/solar-repairs-servicing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Any brand, any installer</span>
+      <h1>Solar repairs &amp; servicing in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        Inverter faults, underperforming systems, isolator and meter issues, panel and
+        string testing and a clean. We service any brand across Pakenham, Officer and the
+        Cardinia Shire &mdash; even if your original installer has long gone.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a system check</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Get your Cardinia solar back to full output.</h2>
+      <div style="max-width: 65rem;">
+        <h3>The corridor&rsquo;s ageing solar base.</h3>
+        <p>
+          Pakenham and Cardinia have a decade of estate solar on their roofs, and a lot
+          of it is now 10&ndash;15 years old &mdash; the age where inverters fail,
+          isolators degrade and output quietly drops. Many of those original installers
+          have gone out of business. We service and repair <strong>any brand</strong>
+          regardless of who installed it, so a dead system isn&rsquo;t a write-off
+          just because the warranty company vanished.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What we diagnose &amp; fix.</h3>
+        <ul>
+          <li><strong>Inverter faults</strong> &mdash; error codes, no display, red lights, repair or replacement</li>
+          <li><strong>Underperforming systems</strong> &mdash; output lower than it should be, more grid import than expected</li>
+          <li><strong>Isolator &amp; fuse issues</strong> &mdash; the known failure point on older rooftop and meter-box isolators</li>
+          <li><strong>Meter &amp; grid-voltage problems</strong> &mdash; tripping, export not registering, voltage-rise shutdowns</li>
+          <li><strong>Panel &amp; string testing</strong> &mdash; identifying dead panels, shading losses and soiling, plus a clean</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">How a service call works.</h3>
+        <p>
+          A diagnostic call-out and health check is typically <strong>$150&ndash;$250</strong>,
+          credited toward the repair if you proceed. We test panels and strings, read the
+          inverter, check isolators and the meter, and quote the fix before any
+          chargeable work. Common repairs: isolator or fuse replacement
+          $200&ndash;$450; inverter replacement $1,500&ndash;$3,000 depending on size and
+          brand; panel clean and string test from around $200. We&rsquo;ll tell you
+          honestly when an ageing inverter is better replaced than repaired.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Servicing &amp; pre-sale checks.</h3>
+        <p>
+          A health check every 2&ndash;3 years keeps a grid-tied system honest, and a
+          pre-sale check turns your solar into a selling point for buyers. All work is to
+          AS/NZS 5033 and AS/NZS 4777 by a CEC-accredited installer, with a Certificate
+          of Electrical Safety where prescribed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Time for an upgrade instead?</h2>
+      <p class="lead" style="max-width: 48rem;">
+        If your old system is past its best, a new
+        <a href="/services/solar-panel-installation/">solar panel installation</a> with a
+        modern hybrid inverter may beat the repair. Many owners use the visit to add
+        <a href="/services/battery-storage/">battery storage</a> while the 2026 rebate is
+        high, or upgrade to a full
+        <a href="/services/solar-battery-systems/">solar + battery system</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Book a solar health check.</h2>
+        <p>Any brand, any installer. We diagnose, quote, and get you back to full output.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

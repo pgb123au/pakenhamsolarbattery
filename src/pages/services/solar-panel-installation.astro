@@ -1,0 +1,151 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does solar cost in Pakenham in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "After STCs, a quality 6.6kW system in Pakenham runs about $5,500-$8,500 installed. A 10kW system suits the larger north-facing roofs in Cardinia Lakes and Heritage Springs at roughly $8,500-$11,000, and a 13kW system about $11,000-$14,000. The price depends on panel brand, inverter and roof complexity (tile vs Colorbond, single vs double storey). Worked example: a Cardinia Lakes home installs a 10kW array of Trina panels with a Sungrow inverter at a list price near $12,500; STCs take roughly $3,500 off, so the net is about $9,000, paying back in around 4-5 years on a $350-plus quarterly bill." }
+    },
+    {
+      "@type": "Question",
+      "name": "What size solar system do I need for my Pakenham home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For most Cardinia family homes we recommend 6.6kW to 10kW. The corridor's newer estate roofs in Officer, Cardinia Lakes and Pakenham East are large and north-facing, so 10-13kW is usually achievable and worth it if you have or plan an EV and a battery. We size to your actual usage, your roof orientation and any United Energy export limit - not a one-size-fits-all package. Oversizing the array slightly is sensible because panels are the cheapest part and you can store the extra in a battery." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which solar panels and inverters do you install?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We install Tier-1 panels - Trina, Jinko and REC - paired with Fronius or Sungrow inverters. These are the brands with the strongest warranty support and local service in Victoria. Every install is to AS/NZS 5033 (PV array installation) and AS/NZS 4777 (grid connection of inverters), carried out by a Clean Energy Council (CEC) accredited installer, which is the requirement to claim STCs." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I get the STC discount upfront in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. STCs (Small-scale Technology Certificates) are applied by your CEC-accredited installer as an upfront discount on the quoted price - you do not pay full price and claim later. The number of certificates depends on system size and the 2026 deeming period. We show the STC value clearly on your fixed-price proposal so you can see exactly what you pay net." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar Panel Installation Pakenham | Tier-1 Panels, STCs | (03) 9003 0108"
+  description="CEC-accredited solar panel installation for Pakenham, Officer, Cardinia Lakes &amp; Cardinia Shire. Tier-1 Trina, Jinko, REC panels with Fronius/Sungrow inverters. STCs applied upfront. ~$5,500-$14,000 after STCs. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/services/solar-panel-installation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">CEC-accredited solar PV</span>
+      <h1>Solar panel installation in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        Tier-1 panels (Trina, Jinko, REC) with Fronius or Sungrow inverters, sized to
+        your bills and roof. STCs applied upfront, United Energy connection handled.
+        From a 6.6kW Officer new build to a 13kW Heritage Springs roof.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free solar quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Solar that pays back fast on a Cardinia roof.</h2>
+      <div style="max-width: 65rem;">
+        <h3>Sized to your bills, not a package.</h3>
+        <p>
+          The corridor&rsquo;s new estates in Officer, Cardinia Lakes and Pakenham East
+          deliver large, north-facing, solar-ready roofs &mdash; ideal for a real
+          10&ndash;13kW system rather than a token 6.6kW special. We read your actual
+          quarterly bills, check your roof orientation and pitch, and size the array to
+          cover your daytime load with headroom for an EV and a battery later. Panels
+          are the cheapest part of the system, so sizing slightly larger and storing
+          the surplus almost always wins.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The brands we install.</h3>
+        <ul>
+          <li><strong>Trina &amp; Jinko panels</strong> &mdash; Tier-1, high-output mono PERC/TOPCon, excellent value with strong Australian warranty support</li>
+          <li><strong>REC panels</strong> &mdash; premium Tier-1, best-in-class performance warranty for owners who want the top end</li>
+          <li><strong>Fronius inverters</strong> &mdash; Austrian-made, battery-ready, the long-term reliability benchmark</li>
+          <li><strong>Sungrow inverters</strong> &mdash; superb value, hybrid models that pair straight into a battery</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">A worked Pakenham example.</h3>
+        <p>
+          A Cardinia Lakes family on a $380 quarterly bill installs a 10kW array of
+          Trina panels with a Sungrow hybrid inverter. List price is about
+          <strong>$12,500</strong>; STCs take roughly <strong>$3,500</strong> off, so
+          the net is near <strong>$9,000</strong>. With most of their daytime load
+          covered and the surplus exported (or stored once they add a battery), the
+          system pays back in around 4&ndash;5 years &mdash; and the hybrid inverter
+          means adding a battery later is a bolt-on, not a re-install.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Compliance we handle for you.</h3>
+        <ul>
+          <li>Clean Energy Council (CEC) accredited install &mdash; required to claim STCs</li>
+          <li>AS/NZS 5033 (PV array installation) and AS/NZS 4777 (grid connection of inverters)</li>
+          <li>AS/NZS 3000 (Wiring Rules) and a Certificate of Electrical Safety</li>
+          <li>United Energy (DNSP) pre-approval and post-install connection paperwork</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Common questions.</h3>
+        <p>
+          <strong>How much does solar cost in Pakenham in 2026?</strong> After STCs, a
+          6.6kW system is about $5,500&ndash;$8,500, a 10kW system roughly
+          $8,500&ndash;$11,000, and a 13kW system about $11,000&ndash;$14,000.
+          <strong>Do I get the STC discount upfront?</strong> Yes &mdash; your
+          CEC-accredited installer applies it to the quoted price, so you never pay
+          full price and claim later. <strong>What size do I need?</strong> Most
+          Cardinia homes suit 6.6&ndash;10kW; if you have an EV or plan a battery, the
+          larger north-facing estate roofs make 10&ndash;13kW worthwhile.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Pair it with storage.</h2>
+      <p class="lead" style="max-width: 48rem;">
+        Solar alone covers your daytime load. Add a <a href="/services/battery-storage/">battery</a>
+        to use that solar through the evening peak, look at a combined
+        <a href="/services/solar-battery-systems/">solar + battery system</a> to stack
+        every rebate, or add an <a href="/services/ev-charger-installation/">EV charger</a>
+        so you drive on sunshine.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free solar panel quote.</h2>
+        <p>We read your bills, check your roof, confirm your STCs and size it honestly.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

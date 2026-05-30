@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What size solar system suits a Heritage Springs home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Heritage Springs has larger homes on bigger blocks with sizeable roofs, so 10-13kW systems are the norm here rather than a token 6.6kW. After STCs a 10kW array runs about $8,500-$11,000 and a 13kW about $11,000-$14,000. Larger homes also draw more in the evening, so a bigger battery (13.5kWh Tesla Powerwall 3, or stacked Sungrow/BYD) makes sense to carry that load." }
+    },
+    {
+      "@type": "Question",
+      "name": "How big a battery do I need for a larger Heritage Springs home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Larger homes with pools, ducted systems and more occupants use more in the evening, so we typically spec 13.5kWh and up - a Tesla Powerwall 3, or stacked Sungrow/BYD modules. The 2026 Cheaper Home Batteries rebate (around $252 per usable kWh) scales with capacity, so a bigger battery captures a bigger rebate. We size it to your real evening load rather than a round number." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I run solar, a big battery and an EV charger in Heritage Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The larger Heritage Springs roofs comfortably support a 10-13kW array that fills a large battery and still charges an EV on daytime sun. We design it as one hybrid system so the solar, battery and EV charger work together, and we size the array so the car and the battery are both filled by mid-afternoon." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install premium solar in Heritage Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pakenham Solar & Battery installs Tier-1 panels (Trina, Jinko, REC) with Fronius or Sungrow inverters, and Tesla Powerwall, Sungrow and BYD batteries across Heritage Springs. We are Clean Energy Council accredited and install to AS/NZS 5033, AS/NZS 4777 and AS/NZS 3000. Call (03) 9003 0108 for a free quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar &amp; Battery Heritage Springs | 10-13kW, Big Battery | (03) 9003 0108"
+  description="Solar panels, battery storage &amp; EV chargers for Heritage Springs - larger homes, 10-13kW systems, bigger batteries, premium Tier-1 install. CEC-accredited. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/heritage-springs/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Heritage Springs &middot; Larger Homes</span>
+      <h1>Solar &amp; battery in <span class="accent">Heritage Springs</span>.</h1>
+      <p class="hero-sub">
+        Heritage Springs is larger-home territory &mdash; bigger roofs, bigger evening
+        loads and bigger systems. 10&ndash;13kW arrays paired with a substantial battery
+        are the norm here, sized to carry pools, ducted systems and full family evenings.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Heritage Springs</span>
+      <h2>The Heritage Springs solar story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Bigger roofs, bigger systems.</h3>
+        <p>
+          Heritage Springs homes are larger and on bigger blocks, with the roof space to
+          support a real <a href="/services/solar-panel-installation/">10&ndash;13kW
+          array</a> rather than a token system. After STCs that&rsquo;s about
+          $8,500&ndash;$14,000 depending on size. Larger homes also draw more in the
+          evening &mdash; pools, ducted heating and cooling, more occupants &mdash; so
+          generous solar that fills a substantial battery is the right call.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Bigger batteries for bigger loads.</h3>
+        <p>
+          For these homes we typically spec <strong>13.5kWh and up</strong> &mdash; a
+          Tesla Powerwall 3, or stacked Sungrow and BYD modules. The 2026 Cheaper Home
+          Batteries rebate (around $252 per usable kWh) scales with capacity, so a larger
+          <a href="/services/battery-storage/">battery</a> captures a larger rebate. We
+          size it to your real evening load curve, not a round number, and many owners do
+          the lot as one <a href="/services/solar-battery-systems/">solar + battery
+          system</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Heritage Springs jobs.</h3>
+        <ul>
+          <li>13kW premium Tier-1 array on a large roof (~$11,000&ndash;$14,000 after STCs)</li>
+          <li>13.5kWh Tesla Powerwall 3 or stacked battery, rebate applied</li>
+          <li>Full <a href="/services/solar-battery-systems/">solar + battery system</a> for a larger home</li>
+          <li><a href="/services/ev-charger-installation/">EV charger</a> integrated for daytime solar charging</li>
+          <li><a href="/services/solar-repairs-servicing/">Service or upgrade</a> of an earlier undersized system</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Heritage Springs solar quote.</h2>
+        <p>Larger systems, bigger batteries, premium Tier-1 install. Every rebate applied.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

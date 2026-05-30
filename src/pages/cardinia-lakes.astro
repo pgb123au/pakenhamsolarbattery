@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is solar worth it in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cardinia Lakes is an established estate with large, mostly north-facing roofs and strong owner-occupier uptake, which makes it ideal for a 10kW system. After STCs a 10kW array runs about $8,500-$11,000 and pays back in roughly 4-5 years on a typical $350-plus quarterly bill. Many Cardinia Lakes homes installed solar years ago and are now adding a battery to store that daytime generation - exactly what the 2026 federal rebate rewards." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I add a battery to my existing Cardinia Lakes solar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, and 2026 is the time to do it. Cardinia Lakes has a large base of solar arrays from a decade of estate ownership, and the federal Cheaper Home Batteries Program takes around $252 per usable kWh off a battery this year. We check your existing inverter is battery-ready (or quote a hybrid inverter), then size the battery to your evening usage. A 10kWh battery typically nets about $8,500 after the rebate and lifts self-consumption from around 30 percent to 70-80 percent." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need United Energy approval for solar in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cardinia Lakes is in the United Energy distribution network, so every grid-connected solar or battery install needs DNSP pre-approval before it is energised, and the inverter must meet AS/NZS 4777 export rules for the area. We lodge the pre-approval and handle the connection paperwork as part of the job." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which solar installer covers Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pakenham Solar & Battery installs and services solar, batteries and EV chargers right across Cardinia Lakes. We are Clean Energy Council (CEC) accredited - the requirement to claim STCs and the battery rebate - and install to AS/NZS 5033, AS/NZS 4777 and AS/NZS 3000. Call (03) 9003 0108 for a free quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar &amp; Battery Cardinia Lakes | Panels, Powerwall, EV | (03) 9003 0108"
+  description="Solar panels, battery storage &amp; EV chargers for Cardinia Lakes - large north-facing estate roofs, battery retrofits, CEC-accredited, 2026 rebate applied. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/cardinia-lakes/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cardinia Lakes &middot; Established Estate</span>
+      <h1>Solar &amp; battery in <span class="accent">Cardinia Lakes</span>.</h1>
+      <p class="hero-sub">
+        Cardinia Lakes is an established estate of large, mostly north-facing roofs with
+        strong owner-occupier solar uptake. Two markets in one suburb &mdash; homes
+        going solar for the first time, and the big base of existing arrays now adding
+        batteries while the 2026 rebate is high.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why Cardinia Lakes</span>
+      <h2>The Cardinia Lakes solar story.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Large north-facing roofs, made for solar.</h3>
+        <p>
+          Cardinia Lakes homes sit on generous blocks with large, mostly north-facing
+          roofs &mdash; the best orientation for a productive array. That makes a real
+          <a href="/services/solar-panel-installation/">10kW solar system</a>
+          straightforward rather than a squeeze. After STCs a 10kW install runs about
+          $8,500&ndash;$11,000 and pays back in roughly 4&ndash;5 years on a typical
+          $350-plus quarterly bill. Where export to United Energy is limited, we size a
+          battery so you keep your daytime solar rather than give it away.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Battery retrofits are half the work here.</h3>
+        <p>
+          A decade of estate ownership means Cardinia Lakes has one of the largest
+          existing solar bases in the corridor &mdash; and most of those homes export
+          their daytime surplus for a few cents. Adding
+          <a href="/services/battery-storage/">battery storage</a> flips that: store the
+          surplus, run the evening peak on it, and lift self-consumption from around 30
+          percent to 70&ndash;80 percent. The 2026 Cheaper Home Batteries rebate takes
+          roughly $252 per usable kWh off, so a 10kWh battery nets about $8,500.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Typical Cardinia Lakes jobs.</h3>
+        <ul>
+          <li>10kW Tier-1 solar array on a large north-facing roof (~$8,500&ndash;$11,000 after STCs)</li>
+          <li>Battery retrofit onto an existing array, rebate applied (~$8,500 net for 10kWh)</li>
+          <li>Full <a href="/services/solar-battery-systems/">solar + battery system</a> with a hybrid inverter ($17,000&ndash;$19,000 net)</li>
+          <li><a href="/services/ev-charger-installation/">EV charger</a> integrated with solar for free daytime charging</li>
+          <li><a href="/services/solar-repairs-servicing/">Inverter repair or service</a> on an ageing original install</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other service areas.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Cardinia Lakes solar quote.</h2>
+        <p>Large roofs sized properly. Battery retrofits with the 2026 rebate applied.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

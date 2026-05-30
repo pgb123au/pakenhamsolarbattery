@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a solar &amp; battery system cost in Pakenham in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "After STCs, a quality 6.6kW solar system in Pakenham runs about $5,500-$8,500 installed, and a 10-13kW system (suited to the larger north-facing roofs in Heritage Springs and Cardinia Lakes) about $9,000-$14,000. Home batteries are roughly $1,000-$1,300 per usable kWh before rebates - so a 13.5kWh Tesla Powerwall 3 lands near $13,500-$16,500, and a 10kWh Sungrow or BYD pack near $9,000-$12,000. Worked example: a Cardinia Lakes family installs a 10kW system plus a 10kWh battery. List price is about $24,000; the federal Cheaper Home Batteries Program (around $252/kWh in 2026) takes roughly $2,500 off the battery, STCs take several thousand off the solar, and the net is typically $17,000-$19,000 - paying back in around 6-8 years on a $400-plus quarterly bill." }
+    },
+    {
+      "@type": "Question",
+      "name": "What rebates can I get for solar and a battery in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three stack together in Victoria. Solar panels attract federal STCs (Small-scale Technology Certificates) applied as an upfront discount by your CEC-accredited installer. Batteries attract the federal Cheaper Home Batteries Program - a 30 percent discount worth around $252 per usable kWh in 2026 and tapering in later years - which we claim on your behalf at the point of sale. Solar Victoria rebate and interest-free loan eligibility may also apply depending on your income and property. We confirm exactly which apply to your address before you commit." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need approval from United Energy to install solar in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pakenham, Officer and the Cardinia Shire are in the United Energy distribution network, so every grid-connected solar or battery install needs pre-approval from United Energy (the DNSP) before it is energised. We lodge that pre-approval, design the system to AS/NZS 4777 inverter export limits for your area, and handle the post-install connection paperwork. Some parts of the corridor have export limits that affect ideal system size - exactly why a battery to store daytime solar makes sense here." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it worth adding a battery to my existing Pakenham solar system?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For most Cardinia homes with an existing 6.6kW or larger array, yes - especially in 2026 while the Cheaper Home Batteries rebate is at its highest. A battery stores the cheap daytime solar you currently export for a few cents and uses it through the expensive evening peak, lifting self-consumption from around 30 percent to 70-80 percent and adding blackout backup. We check your existing inverter is battery-ready (or quote a hybrid inverter), confirm AS/NZS 5033 and AS/NZS 4777 compliance, and size the battery to your real evening usage rather than overselling you." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are your solar installers CEC accredited?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every install is carried out by a Clean Energy Council (CEC) accredited installer and designer - the mandatory requirement for claiming STCs and the battery rebate. We install to AS/NZS 5033 (PV array installation), AS/NZS 4777 (grid connection of inverters) and AS/NZS 3000 (Wiring Rules), and we use Tier-1 panels (Trina, Jinko, REC) with Fronius or Sungrow inverters, plus Tesla, Sungrow and BYD batteries." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pakenham Solar &amp; Battery | CEC-Accredited Solar &amp; Battery Install | (03) 9003 0108"
+  description="CEC-accredited solar panel &amp; battery installation for Pakenham, Officer, Cardinia Lakes, Lakeside, Heritage Springs and the Cardinia Shire. Tier-1 panels, Tesla Powerwall &amp; battery storage, EV chargers. Cheaper Home Batteries rebate + STCs applied. Free quote."
+  canonical="https://pakenhamsolarbattery.com.au/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pakenham &middot; Officer &middot; Cardinia Lakes &middot; Cardinia Shire</span>
+      <h1>Pakenham&rsquo;s CEC-accredited <span class="accent">solar &amp; battery</span> installers.</h1>
+      <p class="hero-sub">
+        Tier-1 solar panels, Tesla Powerwall &amp; Sungrow/BYD battery storage, EV chargers
+        and solar servicing. Across Pakenham, Officer, Cardinia Lakes and the wider
+        Cardinia Shire. Cheaper Home Batteries rebate, Solar Victoria &amp; STCs applied.
+        Free, no-obligation quote.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free solar quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>CEC</strong>Accredited installer &amp; designer</div>
+        <div><strong>~30% off</strong>Battery via 2026 federal rebate</div>
+        <div><strong>AS/NZS 4777</strong>Grid-compliant by default</div>
+        <div><strong>United Energy</strong>DNSP pre-approval handled</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we install</span>
+      <h2>Five solar &amp; battery services.</h2>
+      <p class="section-lead">
+        From a single 6.6kW rooftop array on an Officer new build through to a
+        10&ndash;13kW system with a Tesla Powerwall and EV charger on a larger
+        Heritage Springs roof. We design it, install it, and claim every rebate
+        you&rsquo;re entitled to.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/solar-panel-installation/">
+          <div class="svc-icon" aria-hidden="true">&#9728;</div>
+          <h3>Solar panel installation</h3>
+          <p>CEC-accredited install of Tier-1 panels (Trina, Jinko, REC) with Fronius or Sungrow inverters, sized to your bills &amp; roof. STCs applied upfront. ~$5,500&ndash;$14,000 after STCs depending on system size.</p>
+          <span class="svc-link">See solar panel installation &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/battery-storage/">
+          <div class="svc-icon" aria-hidden="true">&#9211;</div>
+          <h3>Battery storage</h3>
+          <p>Tesla Powerwall 3, Sungrow &amp; BYD battery install to store daytime solar for the evening peak plus blackout backup. Federal Cheaper Home Batteries rebate applied &mdash; around $252/kWh in 2026.</p>
+          <span class="svc-link">See battery storage &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/solar-battery-systems/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Solar + battery systems</h3>
+          <p>A combined design that maximises self-consumption and stacks the Cheaper Home Batteries rebate with Solar Victoria and federal STCs. The best-value way to cut a $400-plus quarterly bill.</p>
+          <span class="svc-link">See solar + battery systems &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/ev-charger-installation/">
+          <div class="svc-icon" aria-hidden="true">&#9889;</div>
+          <h3>EV charger installation</h3>
+          <p>Home EV charger install (Tesla, Zappi, Wallbox) integrated with your solar so you charge the car on free daytime sun rather than peak-rate grid power. To AS/NZS 3000 with United Energy compliance.</p>
+          <span class="svc-link">See EV charger installation &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/solar-repairs-servicing/">
+          <div class="svc-icon" aria-hidden="true">&#9874;</div>
+          <h3>Solar repairs &amp; servicing</h3>
+          <p>Inverter faults, underperforming systems, isolator &amp; meter issues, panel &amp; string testing and a clean. We service any brand &mdash; not just systems we installed.</p>
+          <span class="svc-link">See solar repairs &amp; servicing &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Cardinia specialist</span>
+      <h2>Three things every Pakenham solar &amp; battery project needs to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>Claiming every 2026 rebate you&rsquo;re entitled to.</h3>
+          <p>
+            The federal Cheaper Home Batteries Program is the biggest battery
+            incentive Australia has ever run &mdash; a 30 percent discount worth
+            around <strong>$252 per usable kWh in 2026</strong>, tapering in later
+            years, on top of solar STCs and Solar Victoria. We&rsquo;re a Clean
+            Energy Council (CEC) accredited installer, which is the mandatory
+            requirement to claim them, and we apply the lot as an upfront discount.
+            Get a battery in while the rebate is at its highest &mdash; this is the
+            window driving the retrofit surge across the corridor&rsquo;s huge solar base.
+          </p>
+        </div>
+        <div>
+          <h3>United Energy connection &amp; export limits.</h3>
+          <p>
+            Pakenham, Officer and the Cardinia Shire sit in the <strong>United Energy
+            distribution network</strong>, so every grid-connected system needs DNSP
+            pre-approval before it&rsquo;s energised, and some parts of the corridor
+            carry export limits that cap how much you can sell back. We lodge the
+            pre-approval, design to AS/NZS 4777 inverter rules, and &mdash; where
+            export is limited &mdash; size a battery so you store your daytime solar
+            for the evening instead of giving it away for a few cents.
+          </p>
+        </div>
+        <div>
+          <h3>Big north-facing estate roofs, sized properly.</h3>
+          <p>
+            The corridor&rsquo;s new estates (around 255 dwellings a year, with
+            Pakenham East alone planned for 7,000-plus homes) deliver large,
+            north-facing, solar-ready roofs &mdash; ideal for a 10&ndash;13kW
+            system. The mistake is undersizing for an EV and a battery you&rsquo;ll
+            add later. We size to AS/NZS 5033, your real evening usage and your
+            future EV, and use Tier-1 panels (Trina, Jinko, REC) with Fronius or
+            Sungrow inverters built to last Cardinia&rsquo;s cold winters and hot,
+            dry 40-degree summer days.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we install.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        We service the full Cardinia Shire and adjoining suburbs &mdash; from
+        new-build Officer estates to established Cardinia Lakes, Lakeside,
+        Heritage Springs and premium Beaconsfield homes. Solar, battery, EV and
+        servicing across the lot.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+        <span class="area-pill area-pill-static">Pakenham East</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From free quote to switched-on system &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free quote</h3><p>We check your bills, roof and meter, confirm which rebates apply, and design a system sized to your usage. No obligation.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Design &amp; rebates</h3><p>Fixed-price proposal with Tier-1 panels, inverter and battery spec, plus every STC, battery and Solar Victoria rebate applied as an upfront discount.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>United Energy approval</h3><p>We lodge DNSP pre-approval and design to AS/NZS 4777 export rules before a panel goes up.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Install</h3><p>CEC-accredited install to AS/NZS 5033 &amp; AS/NZS 3000 &mdash; most solar systems in a day, solar-plus-battery in one to two days.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Commission &amp; monitor</h3><p>Inverter commissioning, app monitoring set up, Certificate of Electrical Safety, and connection paperwork lodged. You start saving from day one.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free solar &amp; battery quote?</h2>
+        <p>We check your bills and roof, confirm your rebates, and size a system honestly. No pressure, no obligation.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
