@@ -1,0 +1,203 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an STC and how much is it worth on a Pakenham solar install?",
+      "acceptedAnswer": { "@type": "Answer", "text": "An STC - Small-scale Technology Certificate - is a tradeable rebate created by the federal Renewable Energy Target scheme. One STC is issued for each megawatt-hour of electricity your solar system is deemed to generate over its lifetime, calculated from a postcode-specific multiplier (zone 4 for Pakenham), the system kW size, and the deeming period. A 6.6kW system in Pakenham creates roughly 70-75 STCs at install. At the 2026 spot market price of about $36 per certificate, that's a $2,520-$2,700 upfront discount on your install. A 10kW system creates about 110 STCs - around $3,960." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I claim the STC myself or does the installer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The installer claims it on your behalf, and the rebate appears as an upfront discount on the quoted price - you never see the STC paperwork in a meaningful way and you never get a cheque. This is called 'assigning' the STC to the installer; you sign a one-page assignment form on installation day. The installer then sells the certificates to electricity retailers (who have a federal obligation to buy them) and pockets the cash. The arrangement exists so that you don't have to register on the federal Clean Energy Regulator portal or wait 3-6 months to be paid - it just lands as a discount." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the STC spot price guaranteed?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No - and this is the most important nuance. The STC price is a tradeable market that moves daily, currently sitting around $36 per certificate but it can fluctuate $30-$39 across a year. Quotes from honest installers fix the dollar amount of your STC rebate on the day you sign, and the installer carries the market risk between then and install day. Quotes that say 'at current STC price' without a dollar figure are leaving themselves wiggle room - if the price drops between quote and install, your discount shrinks. Always demand a fixed-dollar STC line on the quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get the STC plus Solar Victoria plus the battery rebate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - they stack. The STC is federal and applies to every eligible system. Solar Victoria's Solar Homes rebate (currently $1,400 for solar panels for eligible households on the income test, plus an interest-free loan up to $1,400 matching) is the Victorian top-up. The 2026 federal Cheaper Home Batteries Program is roughly $252 per usable kWh off a new battery, worth about $2,950-$3,400 on a 12-13.5kWh battery. And Solar Victoria also offers an interest-free loan up to $8,800 toward the battery. We model all four together on the quote so you see one net price." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the deeming period and why does it matter for Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The deeming period is how many years of future generation the STC system credits you for upfront. In 2026 it's 8 years (down from 10 in 2024 - the scheme phases out by 2030, with the deeming period reducing by one each year). For a Pakenham system, that means STC count = system kW x postcode-zone-4-multiplier (1.382) x 8 years. A 6.6kW system therefore generates roughly 6.6 x 1.382 x 8 = 73 STCs in 2026. Next year it'll be 7 years and ~64 STCs. The longer you wait, the smaller the rebate - which is why most Pakenham customers acting now lock in the higher 2026 rebate before the 2027 step-down." }
+    }
+  ]
+};
+---
+<Layout
+  title="STC Certificate for Pakenham Solar | 2026 Rebate Value | (03) 9003 0108"
+  description="What an STC is, how the deemed-energy-saving number is calculated for Pakenham, the 2026 spot-market price (~$36/cert), and how the STC is assigned to the installer up-front so you see a discount, not a payment."
+  canonical="https://pakenhamsolarbattery.com.au/stc-certificate-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Federal solar rebate explained</span>
+      <h1>STC certificates for a <span class="accent">Pakenham</span> solar install.</h1>
+      <p class="hero-sub">
+        What a Small-scale Technology Certificate actually is, how the deemed-energy
+        number is calculated for Pakenham (zone 4, 1.382 multiplier), the 2026 spot
+        price of around $36 per certificate, and how it's assigned to your installer
+        so you see an upfront discount rather than wait for a payment.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a rebate-net quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The federal rebate hiding inside every solar quote.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Most Pakenham homeowners don't realise the biggest line item on their solar
+          quote is a federal scheme called STCs - Small-scale Technology Certificates -
+          created under the Renewable Energy Target Act 2000. It's the original solar
+          rebate, predating Solar Victoria, predating the Cheaper Home Batteries Program,
+          and still the largest single discount on a typical residential install.
+        </p>
+        <p>
+          The mechanism is simple. The federal Clean Energy Regulator issues one STC
+          for every megawatt-hour your system is <em>deemed</em> to generate over the
+          remaining years of the scheme. The system is given credit for the full deeming
+          period upfront, so a 6.6kW system in Pakenham gets roughly 70-75 STCs created
+          on installation day. Those certificates are tradeable - electricity retailers
+          have a federal obligation to buy them - and the spot-market price is what
+          translates the count into dollars on your quote.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The maths for Pakenham specifically.</h3>
+        <p>
+          Pakenham sits in <strong>solar zone 4</strong> under the federal scheme,
+          which uses a multiplier of <strong>1.382</strong> (zones 1 through 4
+          represent decreasing average solar resource - Pakenham is at the southern end
+          of the band). The formula is:
+        </p>
+        <p style="font-family: monospace; background:#f4f4f4; padding:1rem; border-radius:6px;">
+          STCs = System kW &times; Zone multiplier (1.382) &times; Deeming years
+        </p>
+        <p>
+          In 2026 the deeming period is <strong>8 years</strong> (it was 10 in 2024 and
+          steps down by one each calendar year until the scheme closes in 2030). So a
+          6.6kW Pakenham system in 2026 creates <strong>6.6 x 1.382 x 8 = 73 STCs</strong>.
+          A 10kW system creates 110 STCs. A 13.2kW system creates 146 STCs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>What the certificates are worth in 2026.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The STC spot-market price floats. Through 2025 and into 2026 it has been
+          trading at around <strong>$36 per certificate</strong>, with a regulatory
+          ceiling of $40 (a clearinghouse price set under the legislation). For most
+          Pakenham quotes, the practical working number is $36 - that's what you'll
+          see on our quotes and on any honest competitor's.
+        </p>
+        <p>
+          Applied to typical Pakenham system sizes in 2026:
+        </p>
+        <ul>
+          <li><strong>6.6kW system</strong> - 73 STCs &times; $36 = <strong>$2,628</strong> upfront rebate</li>
+          <li><strong>10kW system</strong> - 110 STCs &times; $36 = <strong>$3,960</strong> upfront rebate</li>
+          <li><strong>13.2kW system</strong> - 146 STCs &times; $36 = <strong>$5,256</strong> upfront rebate</li>
+        </ul>
+        <p>
+          That number gets subtracted directly off the gross install cost. It's not a
+          tax credit, not a payment that arrives later - it's a discount that appears
+          on the quote line marked "STC rebate" and reduces what you actually pay.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The fixed-dollar quote rule.</h3>
+        <p>
+          Demand a <strong>fixed dollar STC rebate</strong> on every quote you receive,
+          not a phrase like "subject to STC price on install day" or "at current market
+          rate." The market moves daily. A quote that locks in the dollar amount means
+          the installer carries the market risk between sign-up and install; a quote
+          that doesn't lock it in means you do, and if the price drops 10 percent you
+          lose 10 percent of the rebate. We always lock the figure on the day you sign.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>How the STC gets assigned to us (and why you won't see paperwork).</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          On installation day you sign a one-page form called an STC Assignment Form. It
+          says: "I, the homeowner, transfer the rights to create and trade these STCs to
+          Pakenham Solar &amp; Battery, in exchange for the upfront discount shown on
+          quote #XXXX." That's it. We then submit the certificates into the federal
+          REC Registry within 12 months of install (required by law), they're validated
+          against the Clean Energy Council install database, and once cleared we sell
+          them to retailers via an STC trader.
+        </p>
+        <p>
+          The reason this exists - rather than you claiming the rebate yourself - is
+          that the alternative would have you registering on the Clean Energy Regulator
+          portal, lodging documents, waiting 3-6 months for clearance, and then trying
+          to sell certificates yourself in a market you've never participated in. For
+          the vast majority of homeowners, assigning to the installer is just better.
+          You see the discount today; we carry the admin and the market risk.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Stacking STCs with other 2026 rebates.</h3>
+        <p>
+          The STC stacks. On a typical Pakenham retrofit in 2026 you can layer:
+        </p>
+        <ul>
+          <li><strong>Federal STC</strong> - $2,628 on a 6.6kW system (above)</li>
+          <li><strong>Solar Victoria Solar Homes rebate</strong> - $1,400 on solar
+            panels for eligible households (income test applies), plus a matching
+            interest-free loan up to $1,400</li>
+          <li><strong>Federal Cheaper Home Batteries Program</strong> - roughly $252
+            per usable kWh of battery, about $2,950 off a 12kWh BYD HVS or Sungrow,
+            $3,400+ off a 13.5kWh Powerwall 3</li>
+          <li><strong>Solar Victoria interest-free battery loan</strong> - up to $8,800
+            toward battery purchase, repaid over 4 years zero interest</li>
+        </ul>
+        <p>
+          We model all of those together on the quote so you see one net out-of-pocket
+          figure, with each rebate broken out as a line item. The combined effect on a
+          full PV + battery retrofit in Pakenham right now is dramatic - the rebate
+          stack is bigger than at any point in the scheme's history, and 2026 is the
+          year of peak rebate before the deeming period and battery rebate both step
+          down.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align:center;">
+      <h2>Want the STC + every other Pakenham rebate netted into one price?</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        We quote everything as a single net out-of-pocket figure, with STC, Solar Vic,
+        Cheaper Home Batteries and any interest-free loan modelled in. CEC-accredited
+        installer, Solar Victoria approved retailer, A-grade electrical.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamsolarbattery.com.au">Email quotes@pakenhamsolarbattery.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How often should I clean solar panels in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For most Pakenham homes the right interval is every 12-18 months. On houses with overhanging gums, paperbarks or close-by livestock paddocks (common on the Pakenham Upper and rural-edge blocks) we drop that to 6-9 months because bird droppings and tree sap don't rinse off in normal rain. Newer estates with clean tile roofs and minimal tree cover - Cardinia Lakes, Lakeside core - generally hold 18 months without significant output loss. We monitor your inverter's daily yield curve as the deciding signal: a 8-12% drop from last summer's baseline is the trigger." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do solar panels lose output between cleans in this climate zone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pakenham sits on the dust-belt edge of Melbourne's south-east, with strong westerlies pushing fine dust off agricultural land all summer and pollen from gums and grasses for half the year. The dust forms a thin film that natural rain rinses partially but never fully - by month 10 you've typically got an 8-12% transmission loss across the array. Bird droppings, in particular, bake on hard in summer heat and create permanent hot-spots if left for a season; that's a worse problem than dust because it causes localised cell damage, not just transmission loss." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you use water-fed poles or get on the roof?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Both, depending on roof access and pitch. On single-storey tile roofs at standard 22-degree pitch we'll usually access from a ladder with fall-protection and a soft brush, then rinse with deionised water. On double-storey or steep-pitch roofs (anything above 30 degrees) we use a telescopic water-fed pole from the ground - safer for us and avoids any tile-walking risk. We never use abrasive brushes, never use detergents or soaps, and never use mains pressure on glass - high-pressure water can force its way past the panel frame seal." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will cleaning void my panel warranty?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Professional cleaning by a CEC-accredited installer using the manufacturer's recommended method (soft brush, deionised or rainwater, no detergent, no high pressure) does not void the warranty - in fact most Tier-1 panel manufacturers (Trina, Jinko, REC, LG) explicitly require regular cleaning as a condition of the 25-year performance warranty. DIY cleaning with the wrong technique can void it: pressure washers, abrasive scourers, glass cleaners with ammonia, or walking on the panel surface all create grounds for a warranty rejection. We document each clean with before/after photos so you have an audit trail." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a Pakenham solar panel clean cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard single-storey 6.6kW system (around 18-20 panels) is typically $180-$240 plus GST including a soft-brush + deionised water clean, a visual array inspection, and an inverter health check. A 10kW or larger system on a double-storey runs $280-$380. We give a fixed price upfront based on system size, panel count and roof access - no surprises. If we find a fault during the inspection (cracked panel, failed MC4 connector, loose mounting bracket) we'll quote any remedial work separately rather than tacking it on." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar Panel Cleaning Pakenham | Output Restored | (03) 9003 0108"
+  description="Why dust-belt Pakenham panels lose 8-12% output between cleans, the wet-vs-dry method, soft-brush vs soft-soap-rinse, and the 18-month vs 6-month interval depending on tree cover."
+  canonical="https://pakenhamsolarbattery.com.au/panel-cleaning-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Service &amp; maintenance</span>
+      <h1>Solar panel cleaning in <span class="accent">Pakenham &amp; Cardinia</span>.</h1>
+      <p class="hero-sub">
+        Dust-belt Pakenham panels typically lose 8-12 percent output between cleans.
+        Here's how often to actually clean them, the soft-brush + deionised water method
+        that doesn't void warranty, and how tree cover changes the interval from 18
+        months to 6.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a panel clean</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Why your panels are losing output you can't see.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          When a solar panel is brand new and clean, the front glass transmits more than
+          93 percent of incoming sunlight to the silicon cells underneath. Twelve months
+          later, after a Pakenham summer of westerly dust off the cropping country, a
+          Pakenham winter of leaf litter and bird traffic, and a spring of pollen storms,
+          that transmission has typically dropped to 82-85 percent. The panel hasn't
+          aged - the glass is just covered in a thin opaque film that rain doesn't
+          rinse fully because it dries onto the surface between showers.
+        </p>
+        <p>
+          You can see it on the inverter app if you know where to look. Compare a clear
+          November Sunday from this year against the same Sunday last year. The peak-hour
+          generation should be within 2 percent (panels degrade about 0.5 percent per
+          year, so a brand-new 6.6kW system should still be at 6.3kW peak after 6 years).
+          If you're at 5.8kW where you should be at 6.3kW, that 8 percent gap is dirt.
+          That's roughly $200-$320 a year in lost generation on a typical Pakenham bill -
+          easily more than the cost of a clean.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The two things that matter most.</h3>
+        <p>
+          The dust film is the slow background killer. The faster, sharper killer is
+          <strong>bird droppings</strong>, particularly from magpies and cockies that
+          favour roof ridges. A single 50mm dropping that sits on a panel for a Pakenham
+          summer doesn't just cover three cells - it causes them to heat to a hot-spot
+          while the rest of the string keeps producing, eventually damaging the cell
+          permanently. After 18 months untreated, that's no longer a cleaning job; it's
+          a panel replacement. We see this every summer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>How we actually clean: wet brush, not pressure spray.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The right method is the one every Tier-1 manufacturer specifies in their
+          warranty fine print: <strong>soft natural-bristle brush, deionised or
+          rainwater, no detergent, no abrasive, no high pressure, no walking on the panel
+          face</strong>. That's it. Every other method risks scratching the
+          anti-reflective coating on the glass, forcing water past the EVA seal at the
+          frame, or voiding the 25-year performance warranty outright.
+        </p>
+        <p>
+          For single-storey tile roofs with safe access, we'll set up roof-edge protection,
+          climb on, work each panel with a 250mm soft-bristle brush dipped in a deionised
+          water reservoir, and rinse with the same water. Deionised water is the secret -
+          mains tap water from Pakenham leaves a calcium spotting as it evaporates that
+          looks streaky and traps more dust the following week. Deionised water dries
+          completely clear. For double-storey or steep-pitched roofs we use a
+          <strong>water-fed telescopic pole</strong> from the ground, same brush head,
+          same water - keeps us off slippery tiles and is just as effective.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What's NOT a panel clean.</h3>
+        <p>
+          A pressure washer is not a panel clean - the impact pressure of a 1500-PSI
+          jet exceeds the panel frame seal rating and forces water into the laminate.
+          Window cleaner with ammonia is not a panel clean - it strips the
+          anti-reflective coating. A garden hose on full pressure with a kitchen sponge
+          is not a panel clean - the abrasive side of the sponge micro-scratches the
+          glass. A magic eraser is not a panel clean - it's an abrasive masquerading as
+          a non-abrasive. We get warranty-claim phone calls every season from people
+          who've tried these and now have a documented "improper maintenance" finding
+          on their array.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The right interval by suburb and tree cover.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          One interval doesn't fit every Pakenham roof. Here's the rough guide we use
+          when scheduling annual maintenance:
+        </p>
+        <ul>
+          <li><strong>18 months</strong> - newer estates with tile roofs, minimal tree
+            cover, no livestock paddock within 500m. Most of Cardinia Lakes, Lakeside,
+            Heritage Springs core.</li>
+          <li><strong>12 months</strong> - the default for most Pakenham, Officer and
+            Beaconsfield homes with one or two trees within dropping range.</li>
+          <li><strong>9 months</strong> - Pakenham Upper and Cardinia rural-edge blocks
+            with significant gum cover, paperbarks or livestock nearby.</li>
+          <li><strong>6 months</strong> - homes directly under or alongside mature eucalypts,
+            or coastal-influenced sites where salt-spray gets airborne in storms.</li>
+        </ul>
+        <p>
+          On every visit we also do a <strong>visual array inspection</strong>: check for
+          micro-cracks (we look for the cell pattern under raking light), inspect MC4
+          connectors and DC isolators for water ingress (a notorious failure on 10+yr
+          installs), check the mounting brackets and rail bolts, and confirm the
+          inverter's recent generation curves look healthy. We send through a one-page
+          report with before/after photos and any flagged items.
+        </p>
+        <p>
+          The honest answer for most Pakenham customers is: book a clean every spring,
+          ahead of the summer generation peak. That single visit catches dirt before it
+          costs you the highest-yield months of the year, and the visual inspection
+          catches connector or panel faults before they grow into warranty claims.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align:center;">
+      <h2>Book a Pakenham panel clean before summer peak.</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        Fixed price upfront based on your system size and roof access, soft-brush method,
+        deionised water, written inspection report. CEC-accredited installer, fully
+        insured for roof work.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamsolarbattery.com.au">Email quotes@pakenhamsolarbattery.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>

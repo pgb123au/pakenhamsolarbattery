@@ -1,0 +1,197 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the typical lifespan of a solar inverter in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A good-quality string inverter in a Pakenham home typically lasts 10-12 years; the panels themselves outlive it (25-year warranties). The cheap inverters that flooded the market 2014-2017 are reaching end-of-life right now and we're seeing them fail in batches across Heritage Springs, Beaconsfield and the older parts of Officer. Premium brands - Sungrow, Fronius, GoodWe, SMA - tend to make it past the 10-year mark, with Fronius and Sungrow now offering 10-year standard warranties (extendable to 20). The fault-free zone is roughly years 2-8; after that, expect something." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I tell if my solar inverter has failed?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three signs in order of severity. First, the inverter app shows zero generation today when the sun is shining - that's a hard failure. Second, the inverter display shows an error code (E033, E041, F-codes - manufacturer-specific) and refuses to start - that's a fault state needing service. Third, generation is significantly down from last year but still happening - that's usually a degraded but functioning inverter, sometimes recoverable with a firmware update, sometimes a sign of MPPT-stage failure. Either way, the inverter app is your dashboard - if you're not logged in, that's the first call." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the inverter warranty cover the cost of replacing it?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It covers the inverter unit itself - the manufacturer ships you a replacement or a refurbished swap - but in almost every case the warranty does NOT cover the labour to remove the old one and install the new one. That's the big gotcha. A typical labour-only swap is $480-$780 depending on inverter size and complexity (single MPPT string vs hybrid with battery). Some retailers and installers offer extended warranty packages at install time that include labour; if you bought yours from a now-defunct cheap installer in 2015, the labour cost is on you. We process the OEM claim and replacement on your behalf and quote the labour upfront." }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the most common inverter failure modes you see in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Five recurring failures on 7-15 year old units. (1) Electrolytic capacitor failure on the DC bus - causes intermittent shutdowns, more common in inverters mounted in direct afternoon sun. (2) Fan/cooling failure leading to thermal shutdown - the fans wear out around year 8. (3) MPPT-stage failure where one input dies but the others keep working - generation drops to half. (4) Internal contactor weld - the inverter trips and won't restart. (5) Display/comms board failure - the unit still inverts but you can't see what it's doing. Numbers 1-3 are the biggest. Heritage Springs and older Pakenham estates with west-facing wall-mounted inverters see #1 the most." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I replace a failed inverter with the same model or upgrade?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Almost always upgrade. Like-for-like replacement of a 2014 inverter with a brand-new 2026 unit of the same brand gives you a fresh 10-year warranty, AS/NZS 4777.2:2020 compliance (the standard your old inverter doesn't meet), and modern features like CT-clamp export limiting and battery-ready hybrid topology. If you're considering a battery in the next 1-3 years, replacing a dead string inverter with a Sungrow SH10RT or GoodWe ET-series hybrid now saves you the cost of doing it twice. We'll usually present both options - straight swap and hybrid upgrade - with the rebate maths showing the breakeven." }
+    }
+  ]
+};
+---
+<Layout
+  title="Solar Inverter Failure in Pakenham | Warranty &amp; Replacement | (03) 9003 0108"
+  description="The 5 most common 7-15 year old inverter failure modes in Pakenham, how warranty claims actually work, what the OEM replaces vs upgrades, and the labour-cost gotcha most warranties don't cover."
+  canonical="https://pakenhamsolarbattery.com.au/inverter-failure-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Service &amp; warranty</span>
+      <h1>Inverter failure in <span class="accent">Pakenham</span>.</h1>
+      <p class="hero-sub">
+        The five most common 7-15 year old inverter failure modes we see across Heritage
+        Springs, Beaconsfield and Officer, how the OEM warranty claim actually works,
+        what they'll replace vs upgrade, and the labour-cost gotcha that catches almost
+        every customer.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a failure assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The inverter is the part that fails first.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Solar panels are simple, passive devices with a 25-year linear-output warranty
+          from every Tier-1 manufacturer. Inverters are the opposite: dense electronics,
+          power transistors switching at 20-50kHz, electrolytic capacitors that heat up
+          all day, cooling fans with bearings, and firmware that needs occasional updates.
+          They are the failure point in 90 percent of dead-system callouts we attend in
+          Pakenham. If your system stops generating, the inverter is the first place we
+          look, not the panels.
+        </p>
+        <p>
+          The 2014-2017 install boom across Heritage Springs, the older parts of
+          Beaconsfield, and the first Officer estates put a lot of low-budget inverters
+          on Cardinia roofs - brands that aggressively undercut on price and have since
+          either left the Australian market or downsized their service operation. Those
+          units are now <strong>10-12 years old</strong> and reaching end-of-design-life.
+          We are getting 3-5 of those failure calls a week through the warmer months.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The five failure modes ranked.</h3>
+        <ul>
+          <li><strong>1. Electrolytic capacitor failure on the DC bus.</strong> The big
+            cylindrical caps that smooth the DC input dry out with heat over time. Symptom:
+            intermittent shutdowns mid-day, error codes around DC bus over/under voltage,
+            sometimes a visible bulge on the cap top. West-wall-mounted inverters that
+            bake in afternoon sun fail first.</li>
+          <li><strong>2. Cooling fan failure.</strong> Most string inverters use one or
+            two small DC fans to push air through the heatsink. The bearings give up
+            around year 8-10. The inverter then thermal-throttles or shuts down on hot
+            days. Sometimes a fan-only repair is possible; often not.</li>
+          <li><strong>3. MPPT-stage failure.</strong> The inverter has 2 or 3 MPPT inputs
+            (one per panel string). One of them dies - usually a power MOSFET or its
+            driver - and the panels on that string produce nothing while the others
+            keep working. You see generation drop by a third or half overnight and
+            mistakenly assume "panels are getting old."</li>
+          <li><strong>4. Internal contactor weld.</strong> The AC-side relay welds shut
+            (or sometimes open). The inverter trips on grid-disconnect and refuses to
+            restart even when conditions are normal.</li>
+          <li><strong>5. Display or comms board failure.</strong> The inverter still
+            functions but you can't see it - no app data, no display, no insight into
+            what's happening. Easy to miss because production looks normal until
+            something else goes wrong.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>How the OEM warranty claim actually works.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          We process the claim on your behalf with the manufacturer's Australian service
+          team. The process is: photograph the inverter nameplate (serial number, model,
+          install date if visible), pull the fault log from the unit's display or app,
+          submit a service request to Sungrow / Fronius / GoodWe / SMA Australia, get
+          an RMA number back, and arrange the swap once the replacement unit lands at
+          our depot. For a current-generation in-warranty unit the OEM ships a
+          replacement (sometimes new, sometimes a factory-refurbished swap) within
+          5-10 business days.
+        </p>
+        <p>
+          For an end-of-life or out-of-warranty unit - the cheap 2014-2017 brands - the
+          OEM may have no Australian presence anymore. In that case there is no warranty
+          path and the right call is replacement with a current Tier-1 unit, not throwing
+          money at a unit whose parts haven't been manufactured for five years. We'll
+          tell you straight at the inspection which category yours falls into.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The labour-cost gotcha.</h3>
+        <p>
+          Every OEM warranty - without exception - covers the inverter hardware only,
+          not the cost of an A-grade electrician to remove the failed unit, mount the
+          replacement, re-wire AC and DC, reconfigure the export limiter and recommission
+          to AS/NZS 4777.2. That labour, plus any consumables (new DC isolators are
+          mandatory on any service visit in Victoria), runs <strong>$480-$780</strong>
+          for a standard single-MPPT string inverter and $700-$1,100 for a hybrid unit
+          with battery integration. We quote it upfront before we order the replacement.
+        </p>
+        <p>
+          The other gotcha: warranty turnaround on the OEM side is 5-10 business days,
+          but in the meantime your system is dead and you're paying retail power prices
+          all day. That's why we move quickly on the diagnosis - the cost of waiting two
+          weeks for a "maybe warranty" call is often more than the labour itself.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Replace like-for-like, or upgrade to hybrid?</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          When an inverter dies in 2026 you're usually better off upgrading than replacing
+          like-for-like. A current-generation hybrid inverter from Sungrow (SH series),
+          GoodWe (ET series) or Fronius (GEN24 Plus) costs 20-40 percent more than a
+          replacement string inverter but delivers three things the old unit couldn't:
+        </p>
+        <ul>
+          <li>Battery readiness - DC-coupled battery input means you can add a Sungrow,
+            BYD or Tesla battery later without paying for the inverter twice.</li>
+          <li>A fresh 10-year warranty (extendable to 15-20 with most brands) instead
+            of inheriting whatever was left on the old one.</li>
+          <li>AS/NZS 4777.2:2020 compliance with all the modern grid-support functions
+            the network now expects.</li>
+        </ul>
+        <p>
+          If you're already thinking about a battery in the next 1-3 years, an inverter
+          failure is the perfect forced moment to do the upgrade once rather than twice.
+          The 2026 federal Cheaper Home Batteries rebate stacks on top of the inverter
+          swap, so the net cost of the bigger move can be surprisingly close to the
+          like-for-like option.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align:center;">
+      <h2>Solar system down? Get it diagnosed today.</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        We attend Pakenham, Officer, Cardinia Lakes and the wider Cardinia Shire same
+        or next day for dead-system callouts. Diagnose, photograph, process the OEM
+        warranty claim, quote the labour upfront. CEC-accredited, A-grade electrical,
+        fully insured.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamsolarbattery.com.au">Email quotes@pakenhamsolarbattery.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>

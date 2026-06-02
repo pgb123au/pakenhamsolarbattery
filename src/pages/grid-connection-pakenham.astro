@@ -1,0 +1,191 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need pre-approval from the network before installing solar in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes - any inverter above 5kW capacity in the Pakenham area requires a pre-connection application to the local distribution network (United Energy / AusNet on the corridor edges) before we install. Systems at or below 5kW single-phase or 10kW three-phase typically get a streamlined approval, but anything above 5kW single-phase triggers a formal export-limit assessment. The form is the standard Embedded Generation Connection Application; we lodge it on your behalf with your NMI, address, proposed inverter make/model and PV array size. Lead time is normally 5-15 business days. We don't book the install crew until the connection offer is in hand." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's a typical export limit on a Pakenham solar pre-approval?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On most Pakenham residential streets the network hands back a 5kW per-phase export limit, regardless of how many panels you install. So a 10kW PV system on a single-phase service will still only be allowed to export 5kW to the grid - the rest of the production either runs the house, charges a battery, or is curtailed by the inverter's export-limit setting. On three-phase services we routinely get 10-15kW export approved. Newer estates further out (Pakenham Upper, Officer South) sometimes get tighter limits because the LV feeder is already heavily solar-saturated; that's exactly why pre-approval exists before you spend money on hardware." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the AS/NZS 4777 commissioning sign-off involve?",
+      "acceptedAnswer": { "@type": "Answer", "text": "AS/NZS 4777.2:2020 is the grid-connect inverter standard, and commissioning is the on-the-day test we sign you off against. It covers: anti-islanding protection (inverter shuts down within 2 seconds of grid loss), voltage and frequency ride-through settings configured to the Australia A region defaults, export-limit programmed against a CT clamp on the mains, neutral integrity, polarity and earth-loop impedance tests, and inverter firmware on the latest approved version. We log the test data, photograph the meter board, hand you a Certificate of Electrical Safety (CES) and an AS/NZS 4777 commissioning certificate. The network gets a copy via the post-connection notification." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I skip pre-approval if I install a smaller system?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Below 5kW inverter capacity (single-phase) you can use the simplified or 'streamlined' connection path - we still notify the network but no formal export assessment is required. The catch: a 5kW inverter limits you to roughly 6.6kW of panels (the standard 1.33x DC oversizing rule), and most Pakenham houses with decent roof space leave significant rebate dollars on the table at that size. We'll always quote both options - the streamlined 5kW build vs the larger pre-approved system - so you can see the breakeven yourself." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I install solar without pre-approval?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Two bad outcomes. First, the network can refuse to commission the meter for feed-in tariff, which means you generate solar but get paid zero for exports - effectively burning the rebate. Second, an unapproved install fails the AS/NZS 4777 paperwork and voids the STC claim, meaning you also lose the federal rebate. We've seen homeowners try to retrofit pre-approval after-the-fact and the network requires the system to be powered down until approved - sometimes weeks. There is no upside to skipping this step, and the lead time is built into our quote." }
+    }
+  ]
+};
+---
+<Layout
+  title="Grid Connection Pre-Approval for Solar in Pakenham | (03) 9003 0108"
+  description="Why every Pakenham inverter over 5kW needs network pre-approval, the application form, lead times, typical export limits, and the AS/NZS 4777 commissioning sign-off. CEC-accredited installer."
+  canonical="https://pakenhamsolarbattery.com.au/grid-connection-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Network pre-approval explained</span>
+      <h1>Grid connection pre-approval for <span class="accent">Pakenham solar</span>.</h1>
+      <p class="hero-sub">
+        Any new inverter above 5kW on the corridor needs a connection offer from the
+        distribution network before we install. Here's the form, the lead time, the
+        export limit you'll typically get back, and what the AS/NZS 4777 commissioning
+        sign-off requires.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free solar quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Why pre-approval exists in the first place.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          The Pakenham growth corridor has gone from a few hundred rooftop solar systems
+          a decade ago to tens of thousands today, and the low-voltage feeders that run
+          down each street were never sized for that much backwards-flowing energy. On
+          a sunny Saturday afternoon in October, every estate from Cardinia Lakes to
+          Lakeside to Officer is pushing kilowatts out onto the grid simultaneously, and
+          the network voltage rises as a result. Above 253V the inverters start tripping
+          off, exports drop, and customer complaints arrive. That's the problem the
+          pre-approval system exists to manage.
+        </p>
+        <p>
+          The Victorian Distribution Code requires the network operator - <strong>United
+          Energy</strong> for most of Pakenham, with <strong>AusNet</strong> on the
+          eastern edge - to assess every new embedded generator and either approve it
+          outright, approve it with an export limit, or in rare cases refuse it until
+          the feeder is upgraded. Above 5kW inverter capacity the assessment is mandatory.
+          Below 5kW, a streamlined notification works.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What we lodge and when.</h3>
+        <p>
+          On the day you sign the quote, we lodge an Embedded Generation Connection
+          Application with the network. It captures your NMI (your meter's unique
+          identifier - it's on the top of every electricity bill), the property address,
+          the proposed inverter make and model with its AS/NZS 4777.2 listing number,
+          the total PV array size in kW DC, whether a battery is part of the system,
+          and the service phase configuration. A Sungrow SH10RT or a Fronius Primo GEN24
+          quote tells the network exactly what they're connecting to.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Lead time and the export limit you'll likely get.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          Standard processing is 5-10 business days for a typical single-phase residential
+          application, stretching to 15 business days if the engineering team flag a
+          voltage-rise concern on your feeder. Three-phase commercial assessments can take
+          20-30 business days. We don't lock in installers until the approval lands - too
+          many people get burned by booking a roofer for next Tuesday and finding out the
+          network needs another fortnight.
+        </p>
+        <p>
+          The connection offer that comes back almost always includes an <strong>export
+          limit</strong>. On Pakenham residential single-phase the typical answer is
+          <strong>5kW per phase</strong>, regardless of how many panels you've installed.
+          On three-phase services in the same suburb we routinely see 10-15kW approved.
+          That's not the network being mean - it's a literal calculation of how much your
+          street's transformer can absorb on a sunny November Sunday with every house
+          generating at once.
+        </p>
+        <p>
+          The export limit gets programmed into the inverter via a <strong>CT-clamp export
+          limiter</strong> we install on the mains tails inside the meter box. The clamp
+          reads the real-time net flow at the connection point and tells the inverter to
+          curtail (throttle back) production to stay under the agreed limit. For a system
+          with a battery, exports get curtailed last - the battery charges first, then
+          the house runs from PV, then exports are throttled.
+        </p>
+
+        <h3 style="margin-top: 2rem;">A worked example from Cardinia Lakes.</h3>
+        <p>
+          A recent install: family on a single-phase service, 10.56kW of panels (24 x 440W),
+          paired with a Sungrow SH10RT hybrid inverter and a 13kWh BYD HVS battery. We
+          lodged the application with a 10kW inverter capacity, asking for a 5kW export
+          limit. Approval came back in 8 business days at the standard 5kW export. On
+          installation day, the inverter was commissioned with the CT clamp limiter set
+          to 5kW. On peak production days the system now generates 9-10kW, runs the house
+          (~2kW), charges the battery (~3kW), and exports the remaining ~5kW - the limit.
+          Nothing is wasted; the battery catches the surplus that used to be exported.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The AS/NZS 4777 commissioning sign-off.</h2>
+      <div style="max-width: 65rem;">
+        <p>
+          On install day, the system gets commissioned to AS/NZS 4777.2:2020. The
+          standard sets the rules for any grid-connect inverter sold in Australia and is
+          non-negotiable. We test and document:
+        </p>
+        <ul>
+          <li><strong>Anti-islanding</strong> - we drop the mains breaker; the inverter
+            must shut down within 2 seconds and remain off until the grid is stable.</li>
+          <li><strong>Voltage and frequency ride-through</strong> - the inverter is
+            configured to Australia Region A settings (volt-watt, volt-var, frequency
+            response curves) which were updated in the 2020 version of the standard.</li>
+          <li><strong>Export-limit verification</strong> - we step PV output above the
+            5kW limit and confirm the CT clamp throttles correctly within seconds.</li>
+          <li><strong>Earth-loop impedance and polarity</strong> - the AC tie-in is tested
+            for safe earth fault clearing.</li>
+          <li><strong>Firmware version</strong> - inverter firmware must be on the latest
+            CEC-approved version; we update on-site if needed.</li>
+        </ul>
+        <p>
+          At the end of the day you receive a Certificate of Electrical Safety (CES)
+          signed by the A-grade electrician, an AS/NZS 4777 commissioning certificate
+          signed by the CEC-accredited designer/installer, the inverter setup report
+          (PDF from the commissioning app), photos of the array, the inverter and the
+          meter board, and the STC paperwork for your federal rebate. Copies go to the
+          network and to your retailer to switch the meter into feed-in mode.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-cta">
+    <div class="section-inner" style="text-align:center;">
+      <h2>Want us to lodge the pre-approval for your Pakenham home?</h2>
+      <p style="max-width: 50rem; margin: 0 auto 2rem;">
+        We handle the network application, the export-limit negotiation, the AS/NZS 4777
+        commissioning, and all the rebate paperwork. You see one net price on the quote
+        and the system goes live with everything filed correctly.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="mailto:quotes@pakenhamsolarbattery.com.au">Email quotes@pakenhamsolarbattery.com.au</a>
+      </div>
+    </div>
+  </section>
+</Layout>
